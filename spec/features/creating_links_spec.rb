@@ -1,5 +1,5 @@
 require 'spec_helper'
-require './app/models/link.rb'
+require './models/link.rb'
 require 'database_cleaner'
 
 RSpec.feature "BookmarkManager" do
