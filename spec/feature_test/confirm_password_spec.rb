@@ -14,5 +14,7 @@ feature 'password confirmation' do
   scenario "I want to see a password confirmation that needs to match" do
     failed_sign_up
     expect{ failed_sign_up }.to change(User, :count).by(0)
+    expect(page.current_path).to eq('/users')
+    expect(page).to have_content "Password and confirmation password do not match"
   end
 end

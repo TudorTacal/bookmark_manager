@@ -10,7 +10,7 @@ class User
   property :password_digest, Text
 
   attr_reader :password
-  attr_accessor :confirmation
+  attr_accessor :password_confirmation
 
   validates_confirmation_of :password
 
