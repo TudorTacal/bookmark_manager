@@ -2,9 +2,6 @@ require 'spec_helper'
 
 feature "can input multiple tages" do
 
-
-
-
   scenario "I should be able to add multiple tags to one link" do
       visit '/links/new'
       fill_in 'title', with: 'This is Bing'
